@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #060B35;
+  --secondary-color: #616070;
+  --blue_link: #00ACDC;
+}
+
+.body {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #e1e1e6;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.card_wrapper {
+  width: 200px;
+  height: 406px;
+  margin: 20px auto;
+}
+
+.card_content {
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #f3f3f3;
+  background-color: white;
+  padding: 0 16px 16px 16px;
+}
+
+.card_image {
+  width: 160px;
+  height: 134px;
+  padding-top: 32px;
+  padding-left: 4px;
+  padding-right: 3px;
+  padding-bottom: 40px;
+  display: flex;
+
+}
+
+.card_name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  width: 166px;
+  height: 36px;
+  color: var(--primary-color);
+  padding-bottom: 4px;
+}
+
+.text_code {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--secondary-color);
+  padding-bottom: 16px;
+}
+
+
+.rating {
+  display: flex;
+  width: 166px;
+  justify-content: space-between;
+  align-items: center;
+  height: 16px;
+  padding-bottom: 24px;
+
+}
+
+.rating_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+.rating_item {
+  padding-right: 7px;
+}
+
+.rating_reviews {
+  display: flex;
+  width: 53px;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--primary-color);
+  width: 53px;
+}
+
+.card_price {
+  display: flex;
+  justify-content: space-between;
+  width: 166px;
+  padding-bottom: 16px;
+}
+
+.price_text {
+  font-size: 12px;
+  color: var(--secondary-color);
+  line-height: 18px;
+}
+
+.price_uah {
+  font-weight: 700;
+  line-height: 18px;
+
+}
+
+.card_link {
+  display: flex;
+}
+
+.link_buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid var(--blue_link);
+  background-color: var(--blue_link);
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  height: 40px;
+  width: 166px;
+}
+
+.card--hover:hover .link_buy {
+  background: none;
+  border: 1px solid var(--blue_link);
+  color: var(--blue_link);
+}
