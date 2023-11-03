@@ -37,7 +37,7 @@ h3 {
 .card {
   padding: 32px 16px 16px;
 
-  width: 198px;
+  width: 200px;
   height: 406px;
 
   border: 1px solid #f3f3f3;
@@ -79,15 +79,18 @@ h3 {
 
 .card__rating {
   margin: 0 0 24px;
+}
 
+.rating {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.rating__stars {
+.stars {
   display: flex;
   gap: 4px;
+  
 }
 
 .stars__star {
@@ -112,7 +115,9 @@ h3 {
 
 .card__price {
   margin: 0 0 16px;
+}
 
+.price {
   display: flex;
   justify-content: space-between;
 }
@@ -131,25 +136,27 @@ h3 {
 }
 
 .card__link {
-  background-color: #00ACDC;
-  border-radius: 5px;
-}
-
-.link__buy {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  height: 40px;
+  width: 100%;
 
   color: #fff;
   background-color: var(--color_link);
 
-  height: 40px;
   text-decoration: none;
   border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px; /* 114.286% */
   text-transform: uppercase;
   transition: all 400ms ease;
   border: 1px solid var(--color_link);
+}
+
+.link__buy {
+ 
 }
 
 .card:hover .link__buy,
